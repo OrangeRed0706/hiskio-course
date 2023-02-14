@@ -1,8 +1,8 @@
 #####
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 
 RUN apt-get update && \
-        apt-get install -y --no-install-recommends nginx=1.10.3* && \
+        apt-get install -y --no-install-recommends nginx && \
         apt-get clean &&\
         rm -rf /var/lib/apt/lists/*
 
