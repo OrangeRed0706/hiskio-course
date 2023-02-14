@@ -13,13 +13,13 @@ spec:
         app: debug-env
     spec:
       containers:
-      - name: debug-server
-        image: hwchiu/netutils
-        volumeMounts:
-        - mountPath: /test
-          name: test-nfs
+        - name: debug-server
+          image: lynn0706/netutils
+          volumeMounts:
+            - mountPath: /test
+              name: test-nfs
       volumes:
-      - name: test-nfs
-        nfs:
-          server: 172.18.0.1
-          path: "/nfsshare"
+        - name: test-nfs
+          nfs:
+            server: 172.18.0.1
+            path: '/nfsshare'

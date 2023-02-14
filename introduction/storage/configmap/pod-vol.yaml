@@ -13,12 +13,12 @@ spec:
         app: debug-vol
     spec:
       containers:
-      - name: debug-server
-        image: hwchiu/netutils
-        volumeMounts:
-        - name: config-volume
-          mountPath: /tmp/config
+        - name: debug-server
+          image: lynn0706/netutils
+          volumeMounts:
+            - name: config-volume
+              mountPath: /tmp/config
       volumes:
-      - name: config-volume
-        configMap:
-          name: config-test
+        - name: config-volume
+          configMap:
+            name: config-test

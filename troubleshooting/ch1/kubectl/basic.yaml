@@ -15,7 +15,7 @@ spec:
         app: debug-pod
     spec:
       containers:
-      - name: debug-pod-server
-        image: hwchiu/netutils
-      - name: nginx
-        image: nginx
+        - name: debug-pod-server
+          image: lynn0706/netutils
+        - name: nginx
+          image: nginx

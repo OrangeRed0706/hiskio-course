@@ -42,8 +42,8 @@ Vagrant.configure("2") do |config|
     sudo k3d cluster create --network k3d-dev -s 1 -p 8082:80@loadbalancer prod
 
     echo 'source <(kubectl completion bash)' >> ~/.bashrc
-    git clone https://github.com/hwchiu/hiskio-gitops-demo-manifest.git
-    git clone https://github.com/hwchiu/hiskio-gitops-demo.git
+    git clone https://github.com/OrangeRed0706/hiskio-gitops-demo-manifest.git
+    git clone https://github.com/OrangeRed0706/hiskio-gitops-demo.git
 
     git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
     bash ~/.bash_it/install.sh -s

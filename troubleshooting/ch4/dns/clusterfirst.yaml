@@ -13,9 +13,9 @@ spec:
         app: pod-clusterfirst
     spec:
       tolerations:
-      - key: node-role.kubernetes.io/master
-        effect: NoSchedule
+        - key: node-role.kubernetes.io/master
+          effect: NoSchedule
       containers:
-      - name: pod-clusterfirst-server
-        image: hwchiu/netutils
-      dnsPolicy: ClusterFirst  
+        - name: pod-clusterfirst-server
+          image: lynn0706/netutils
+      dnsPolicy: ClusterFirst

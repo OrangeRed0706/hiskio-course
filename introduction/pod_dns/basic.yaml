@@ -6,6 +6,6 @@ metadata:
     app: myapp
 spec:
   containers:
-  - name: default
-    image: hwchiu/netutils
+    - name: default
+      image: lynn0706/netutils
   dnsPolicy: Default

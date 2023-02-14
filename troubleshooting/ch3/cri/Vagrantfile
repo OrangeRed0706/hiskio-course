@@ -43,7 +43,7 @@ Vagrant.configure("2") do |config|
     sudo apt-get install -y cri-o cri-o-runc podman-rootless docker-ce=${DOCKER_VERSION}
     sudo usermod -aG docker $USER
 
-    git clone https://github.com/hwchiu/hiskio-course.git
+    git clone https://github.com/OrangeRed0706/hiskio-course.git
 
     #Disable swap
     #https://github.com/kubernetes/kubernetes/issues/53533

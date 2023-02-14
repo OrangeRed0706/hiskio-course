@@ -13,11 +13,11 @@ spec:
         app: hostpath-pv-pvc
     spec:
       containers:
-      - image: hwchiu/netutils
-        name: c1
-        volumeMounts:
-          - mountPath: "/c1"
-            name: hostpath-demo
+        - image: lynn0706/netutils
+          name: c1
+          volumeMounts:
+            - mountPath: '/c1'
+              name: hostpath-demo
       volumes:
         - name: hostpath-demo
           persistentVolumeClaim:

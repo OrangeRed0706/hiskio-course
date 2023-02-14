@@ -13,10 +13,10 @@ spec:
         app: hello-kubernetes
     spec:
       containers:
-      - name: hello-kubernetes
-        image: paulbouwer/hello-kubernetes:1.7
-        ports:
-        - containerPort: 8080
+        - name: hello-kubernetes
+          image: paulbouwer/hello-kubernetes:1.7
+          ports:
+            - containerPort: 8080
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -33,5 +33,5 @@ spec:
         app: client
     spec:
       containers:
-      - name: client
-        image: hwchiu/netutils
+        - name: client
+          image: lynn0706/netutils

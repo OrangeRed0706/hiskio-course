@@ -9,26 +9,25 @@ spec:
   selector:
     matchLabels:
       app: debug
-  serviceName: "debug"
+  serviceName: 'debug'
   template:
     metadata:
       labels:
         app: debug
     spec:
       containers:
-      - name: debug-server
-        image: hwchiu/netutils
-        volumeMounts:
-        - mountPath: /test
-          name: data-pvc 
+        - name: debug-server
+          image: lynn0706/netutils
+          volumeMounts:
+            - mountPath: /test
+              name: data-pvc
   volumeClaimTemplates:
-  - metadata:
-      name: data-pvc
-    spec:
-      storageClassName: ""
-      accessModes: 
-        - ReadWriteMany
-      resources:
-        requests:
-          storage: 50Mi
-  
+    - metadata:
+        name: data-pvc
+      spec:
+        storageClassName: ''
+        accessModes:
+          - ReadWriteMany
+        resources:
+          requests:
+            storage: 50Mi

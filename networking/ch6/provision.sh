@@ -18,7 +18,7 @@ sudo apt-get update
 sudo apt-get install -y docker-ce=${DOCKER_VERSION}
 sudo usermod -aG docker $USER
 
-git clone https://github.com/hwchiu/hiskio-course.git
+git clone https://github.com/OrangeRed0706/hiskio-course.git
 
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
 bash ~/.bash_it/install.sh -s

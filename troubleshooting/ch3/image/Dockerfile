@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER hwchiu@linkernetworks.com
+MAINTAINER lynn0706@linkernetworks.com
 
 RUN apt-get update && \
 	apt-get install -y net-tools \

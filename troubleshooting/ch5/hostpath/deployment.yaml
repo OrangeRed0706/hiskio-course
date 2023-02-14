@@ -13,16 +13,16 @@ spec:
         app: hostpath-demo
     spec:
       tolerations:
-      - key: node-role.kubernetes.io/master
-        effect: NoSchedule
+        - key: node-role.kubernetes.io/master
+          effect: NoSchedule
       containers:
-      - image: hwchiu/netutils
-        name: c1
-        volumeMounts:
-          - mountPath: "/config"
-            name: config-volume
+        - image: lynn0706/netutils
+          name: c1
+          volumeMounts:
+            - mountPath: '/config'
+              name: config-volume
       volumes:
-      - name: config-volume
-        hostPath:
-          path: /data
-          type: DirectoryOrCreate
+        - name: config-volume
+          hostPath:
+            path: /data
+            type: DirectoryOrCreate

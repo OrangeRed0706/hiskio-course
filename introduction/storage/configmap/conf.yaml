@@ -5,10 +5,10 @@ metadata:
   namespace: default
 data:
   key: value
-  version.date: "202020202"
+  version.date: '202020202'
   yaml.config: |
-    name: hwchiu
-    image: hwchiu/netutils
+    name: lynn0706
+    image: lynn0706/netutils
   json.data: |
     {
       "key": {

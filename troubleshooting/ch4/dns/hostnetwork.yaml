@@ -13,9 +13,9 @@ spec:
         app: pod-host
     spec:
       tolerations:
-      - key: node-role.kubernetes.io/master
-        effect: NoSchedule
+        - key: node-role.kubernetes.io/master
+          effect: NoSchedule
       containers:
-      - name: pod-host-server
-        image: hwchiu/netutils
+        - name: pod-host-server
+          image: lynn0706/netutils
       hostNetwork: true

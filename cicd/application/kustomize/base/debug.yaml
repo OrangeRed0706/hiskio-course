@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
         - name: debug-pod
-          image: hwchiu/netutils:latest
+          image: lynn0706/netutils:latest

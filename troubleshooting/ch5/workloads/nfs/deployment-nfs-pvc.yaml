@@ -13,11 +13,11 @@ spec:
         app: nfs-pv-pvc
     spec:
       containers:
-      - image: hwchiu/netutils
-        name: c1
-        volumeMounts:
-          - mountPath: "/c1"
-            name: nfs-demo
+        - image: lynn0706/netutils
+          name: c1
+          volumeMounts:
+            - mountPath: '/c1'
+              name: nfs-demo
       volumes:
         - name: nfs-demo
           persistentVolumeClaim:

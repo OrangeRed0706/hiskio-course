@@ -13,11 +13,11 @@ spec:
         app: local-sc-pvc
     spec:
       containers:
-      - image: hwchiu/netutils
-        name: c1
-        volumeMounts:
-          - mountPath: "/c1"
-            name: local-demo
+        - image: lynn0706/netutils
+          name: c1
+          volumeMounts:
+            - mountPath: '/c1'
+              name: local-demo
       volumes:
         - name: local-demo
           persistentVolumeClaim:

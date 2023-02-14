@@ -13,16 +13,16 @@ spec:
         app: debug-env
     spec:
       containers:
-      - name: debug-server
-        image: hwchiu/netutils
-        env:
-        - name: test_key
-          valueFrom:
-            configMapKeyRef:
-              name: config-test
-              key: key
-        - name: version
-          valueFrom:
-            configMapKeyRef:
-              name: config-test
-              key: version.date
+        - name: debug-server
+          image: lynn0706/netutils
+          env:
+            - name: test_key
+              valueFrom:
+                configMapKeyRef:
+                  name: config-test
+                  key: key
+            - name: version
+              valueFrom:
+                configMapKeyRef:
+                  name: config-test
+                  key: version.date

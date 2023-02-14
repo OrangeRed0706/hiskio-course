@@ -13,13 +13,13 @@ spec:
         app: debug-env
     spec:
       containers:
-      - name: debug-server
-        image: hwchiu/netutils
-        volumeMounts:
-        - mountPath: /my-data
-          name: test-hostpath
+        - name: debug-server
+          image: lynn0706/netutils
+          volumeMounts:
+            - mountPath: /my-data
+              name: test-hostpath
       volumes:
-      - name: test-hostpath
-        hostPath:
-          path: /tmp/data
-          type: FileOrCreate
+        - name: test-hostpath
+          hostPath:
+            path: /tmp/data
+            type: FileOrCreate

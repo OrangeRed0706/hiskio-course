@@ -12,8 +12,8 @@ spec:
         app: debug
     spec:
       tolerations:
-      - key: node-role.kubernetes.io/master
-        effect: NoSchedule
+        - key: node-role.kubernetes.io/master
+          effect: NoSchedule
       containers:
-      - name: debug-server
-        image: hwchiu/netutils
+        - name: debug-server
+          image: lynn0706/netutils

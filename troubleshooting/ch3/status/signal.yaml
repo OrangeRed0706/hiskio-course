@@ -13,9 +13,9 @@ spec:
         app: signal-demo
     spec:
       containers:
-      - name: signal-demo-server
-        image: hwchiu/netutils:signal
-        imagePullPolicy: Always
+        - name: signal-demo-server
+          image: lynn0706/netutils:signal
+          imagePullPolicy: Always
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -32,6 +32,6 @@ spec:
         app: no-signal-demo
     spec:
       containers:
-      - name: signal-demo-server
-        image: hwchiu/netutils:no-signal
-        imagePullPolicy: Always
+        - name: signal-demo-server
+          image: lynn0706/netutils:no-signal
+          imagePullPolicy: Always

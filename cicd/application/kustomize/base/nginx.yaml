@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: hwchiu/cicd-app:latest
+          image: lynn0706/cicd-app:latest
           ports:
             - containerPort: 80
           imagePullPolicy: Always

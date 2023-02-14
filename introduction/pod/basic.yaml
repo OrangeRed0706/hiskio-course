@@ -6,5 +6,5 @@ metadata:
     app: myapp
 spec:
   containers:
-  - name: test
-    image: hwchiu/netutils
+    - name: test
+      image: lynn0706/netutils

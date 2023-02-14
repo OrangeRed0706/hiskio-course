@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: configmap-reload-demo
   annotations:
-    reloader.stakater.com/auto: "true"  
+    reloader.stakater.com/auto: 'true'
 spec:
   replicas: 1
   selector:
@@ -15,12 +15,12 @@ spec:
         app: configmap-reload-demo
     spec:
       containers:
-      - image: hwchiu/netutils
-        name: c1
-        volumeMounts:
-          - mountPath: "/config"
-            name: config-volume
+        - image: lynn0706/netutils
+          name: c1
+          volumeMounts:
+            - mountPath: '/config'
+              name: config-volume
       volumes:
-      - name: config-volume
-        configMap:
-          name: config-test
+        - name: config-volume
+          configMap:
+            name: config-test

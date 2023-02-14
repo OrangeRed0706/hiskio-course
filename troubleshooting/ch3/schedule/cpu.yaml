@@ -13,11 +13,11 @@ spec:
         app: deployment-cpu
     spec:
       tolerations:
-      - key: node-role.kubernetes.io/master
-        effect: NoSchedule
+        - key: node-role.kubernetes.io/master
+          effect: NoSchedule
       containers:
-      - name: deployment-cpu-server
-        image: hwchiu/netutils 
-        resources:
-         requests:
-           cpu: "400m"
+        - name: deployment-cpu-server
+          image: lynn0706/netutils
+          resources:
+            requests:
+              cpu: '400m'

@@ -1,6 +1,6 @@
 namePrefix: staging-
 commonLabels:
-  owner: hwchiu
+  owner: lynn0706
 bases:
   - ../../base
 patches:

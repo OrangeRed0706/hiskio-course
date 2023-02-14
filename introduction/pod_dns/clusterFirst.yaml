@@ -6,6 +6,6 @@ metadata:
     app: myapp
 spec:
   containers:
-  - name: clusterfirst
-    image: hwchiu/netutils
+    - name: clusterfirst
+      image: lynn0706/netutils
   dnsPolicy: ClusterFirst

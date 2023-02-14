@@ -13,13 +13,13 @@ spec:
         app: liveness-demo
     spec:
       containers:
-      - name: python-demo-server
-        image: hwchiu/netutils:python
-        imagePullPolicy: Always
-        livenessProbe:
-          exec:
-            command:
-            - curl
-            - localhost:8000 
-          initialDelaySeconds: 5
-          periodSeconds: 5       
+        - name: python-demo-server
+          image: lynn0706/netutils:python
+          imagePullPolicy: Always
+          livenessProbe:
+            exec:
+              command:
+                - curl
+                - localhost:8000
+            initialDelaySeconds: 5
+            periodSeconds: 5

@@ -13,15 +13,19 @@ spec:
         app: debug-env
     spec:
       containers:
-      - name: debug-server
-        image: hwchiu/netutils
-        volumeMounts:
-        - mountPath: /test
-          name: test-nfs
-        command: ["/bin/bash"]
-        args: ["-c", "while true; do echo $HOSTNAME >> /test/data ;sleep $[($RANDOM%5)+1]s; done"]
+        - name: debug-server
+          image: lynn0706/netutils
+          volumeMounts:
+            - mountPath: /test
+              name: test-nfs
+          command: ['/bin/bash']
+          args:
+            [
+              '-c',
+              'while true; do echo $HOSTNAME >> /test/data ;sleep $[($RANDOM%5)+1]s; done',
+            ]
       volumes:
-      - name: test-nfs
-        nfs:
-          server: 172.18.0.1
-          path: "/nfsshare"
+        - name: test-nfs
+          nfs:
+            server: 172.18.0.1
+            path: '/nfsshare'

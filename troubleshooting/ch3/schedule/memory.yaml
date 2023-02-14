@@ -13,11 +13,11 @@ spec:
         app: deployment-memory
     spec:
       tolerations:
-      - key: node-role.kubernetes.io/master
-        effect: NoSchedule
+        - key: node-role.kubernetes.io/master
+          effect: NoSchedule
       containers:
-      - name: deployment-memory-server
-        image: hwchiu/netutils 
-        resources:
-          limits:
-            memory: "128Mi"
+        - name: deployment-memory-server
+          image: lynn0706/netutils
+          resources:
+            limits:
+              memory: '128Mi'

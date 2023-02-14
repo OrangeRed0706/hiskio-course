@@ -13,11 +13,11 @@ spec:
         app: nfs-ip-error
     spec:
       containers:
-      - image: hwchiu/netutils
-        name: c1
-        volumeMounts:
-          - mountPath: "/c1"
-            name: nfs-ip-demo
+        - image: lynn0706/netutils
+          name: c1
+          volumeMounts:
+            - mountPath: '/c1'
+              name: nfs-ip-demo
       volumes:
         - name: nfs-ip-demo
           persistentVolumeClaim:

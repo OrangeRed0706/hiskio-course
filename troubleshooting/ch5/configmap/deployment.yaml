@@ -13,12 +13,12 @@ spec:
         app: configmap-demo
     spec:
       containers:
-      - image: hwchiu/netutils
-        name: c1
-        volumeMounts:
-          - mountPath: "/config"
-            name: config-volume
+        - image: lynn0706/netutils
+          name: c1
+          volumeMounts:
+            - mountPath: '/config'
+              name: config-volume
       volumes:
-      - name: config-volume
-        configMap:
-          name: config-test
+        - name: config-volume
+          configMap:
+            name: config-test

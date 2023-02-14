@@ -14,10 +14,10 @@ spec:
         app: ds-nodeselector
     spec:
       tolerations:
-      - key: node-role.kubernetes.io/master
-        effect: NoSchedule
+        - key: node-role.kubernetes.io/master
+          effect: NoSchedule
       containers:
-      - name: ds-nodeselector-server
-        image: hwchiu/netutils
+        - name: ds-nodeselector-server
+          image: lynn0706/netutils
       nodeSelector:
-        demo: server        
+        demo: server

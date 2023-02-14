@@ -18,7 +18,7 @@ sudo usermod -aG docker vagrant
 sudo swapoff -a && sudo sysctl -w vm.swappiness=0
 sudo sed '/vagrant--vg-swap/d' -i /etc/fstab
 
-git clone https://github.com/hwchiu/hiskio-course.git
+git clone https://github.com/OrangeRed0706/hiskio-course.git
 
 export KUBE_VERSION="1.17.0"
 sudo apt-get update && sudo apt-get install -y apt-transport-https curl

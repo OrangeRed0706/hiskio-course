@@ -13,11 +13,11 @@ spec:
         app: nfs-mismatch-wihoutsc
     spec:
       containers:
-      - image: hwchiu/netutils
-        name: c1
-        volumeMounts:
-          - mountPath: "/c1"
-            name: nfs-mismatch-wihoutsc-demo
+        - image: lynn0706/netutils
+          name: c1
+          volumeMounts:
+            - mountPath: '/c1'
+              name: nfs-mismatch-wihoutsc-demo
       volumes:
         - name: nfs-mismatch-wihoutsc-demo
           persistentVolumeClaim:

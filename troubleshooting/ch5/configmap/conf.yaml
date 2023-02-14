@@ -4,10 +4,10 @@ metadata:
   name: config-test
   namespace: default
 data:
-  version.date: "2020-07-01"
+  version.date: '2020-07-01'
   yaml.config: |
-    name: hwchiu
-    image: hwchiu/netutils
+    name: lynn0706
+    image: lynn0706/netutils
     soad: qq
   json.data: |
     {

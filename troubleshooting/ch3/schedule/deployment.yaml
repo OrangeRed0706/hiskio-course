@@ -13,11 +13,11 @@ spec:
         app: deployment-default
     spec:
       tolerations:
-      - key: node-role.kubernetes.io/master
-        effect: NoSchedule
+        - key: node-role.kubernetes.io/master
+          effect: NoSchedule
       containers:
-      - name: deployment-default-server
-        image: hwchiu/netutils 
+        - name: deployment-default-server
+          image: lynn0706/netutils
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -34,8 +34,8 @@ spec:
         app: web-default
     spec:
       tolerations:
-      - key: node-role.kubernetes.io/master
-        effect: NoSchedule
+        - key: node-role.kubernetes.io/master
+          effect: NoSchedule
       containers:
-      - name: web-app
-        image: nginx:1.16-alpine
+        - name: web-app
+          image: nginx:1.16-alpine
