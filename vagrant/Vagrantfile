@@ -3,7 +3,7 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "bento/ubuntu-20.04"
-  config.vm.box_version = "202212.05.0"
+  config.vm.box_version = "202212.11.0"
   config.vm.hostname = "k8s-dev"
   config.vm.define vm_name = "k8s"
 
